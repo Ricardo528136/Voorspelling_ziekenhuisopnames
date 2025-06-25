@@ -8,7 +8,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Data inladen
-df = pd.read_csv("C:/Users/Gebruiker/OneDrive/Documenten/Data making/diabetes_binary_5050split_health_indicators_BRFSS2015.csv")
+df = pd.read_csv("Source/diabetes_binary_5050split_health_indicators_BRFSS2015.csv")
 
 # Features & target definieren
 X = df.drop(columns=['Diabetes_binary'])
@@ -56,7 +56,7 @@ plt.show()
 # Export de dataset met voorspellingen
 df['Prediction_RF'] = rf.predict(X)
 df['Prediction_LogReg'] = logreg.predict(X)
-df.to_csv("C:/Users/Gebruiker/OneDrive/Documenten/Data making/diabetes_predictions.csv", index=False)
+df.to_csv("Source/diabetes_predictions.csv", index=False)
 
 # Export feature importance
-importance_df.to_csv("C:/Users/Gebruiker/OneDrive/Documenten/Data making/feature_importance.csv", index=False)
+importance_df.to_csv("Source/feature_importance.csv", index=False)

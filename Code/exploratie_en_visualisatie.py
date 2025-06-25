@@ -9,13 +9,13 @@ df = pd.read_csv(file_path)
 
 # Stap 3: Eerste verkenning
 print("Eerste 5 rijen:")
-display(df.head())
+print(df.head())
 
 print("Dimensies van de dataset:")
 print(df.shape)
 
 print("Beschrijving van numerieke variabelen:")
-display(df.describe())
+print(df.describe())
 
 print("Aantal unieke waarden per kolom:")
 print(df.nunique())
