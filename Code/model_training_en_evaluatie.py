@@ -56,7 +56,7 @@ plt.show()
 # Export de dataset met voorspellingen
 df['Prediction_RF'] = rf.predict(X)
 df['Prediction_LogReg'] = logreg.predict(X)
-df.to_csv("Source/diabetes_predictions.csv", index=False)
+df.to_csv("Output/diabetes_predictions.csv", index=False)
 
 # Export feature importance
-importance_df.to_csv("Source/feature_importance.csv", index=False)
+importance_df.to_csv("Output/feature_importance.csv", index=False)
